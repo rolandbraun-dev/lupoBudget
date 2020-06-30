@@ -9,16 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        
-        VStack {
-            HomeView()
+        GeometryReader { geometry in
             
-            Spacer()
-            
-            TabBarView()
+            VStack {
+                HomeView()
+                
+                Spacer()
+                
+                TabBarView()
+            }
+            .edgesIgnoringSafeArea(.bottom)
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
@@ -26,4 +29,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+enum SFSymbols {
+    static let home     = Image(systemName: "house")
 }
