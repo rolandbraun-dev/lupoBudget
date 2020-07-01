@@ -10,7 +10,15 @@ import SwiftUI
 
 struct TabBarView: View {
     var body: some View {
-        Text("Hello, TabBar")
+        
+        HStack(spacing: 0) {
+                TabBarItemView(symbol: SFSymbols.home, label: "Home")
+                TabBarItemView(symbol: SFSymbols.dollarfill, label: "Dollar")
+                TabBarItemView(symbol: SFSymbols.gear, label: "Settings")
+            }
+            .frame(maxWidth: .infinity)
+            .background(Color(red: 28/255, green: 28/255, blue: 36/255))
+        
     }
 }
 

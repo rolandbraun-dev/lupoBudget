@@ -15,6 +15,7 @@
 		2AE41D7B24AB71FE007B4381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE41D7924AB71FE007B4381 /* LaunchScreen.storyboard */; };
 		2AE41D8424AB94AE007B4381 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D8324AB94AE007B4381 /* TabBarView.swift */; };
 		2AE41D8624AB95DA007B4381 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D8524AB95DA007B4381 /* HomeView.swift */; };
+		2AE41D8824ABA74C007B4381 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D8724ABA74C007B4381 /* TabBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2AE41D7C24AB71FE007B4381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE41D8324AB94AE007B4381 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		2AE41D8524AB95DA007B4381 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2AE41D8724ABA74C007B4381 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				2AE41D8224AB9348007B4381 /* Views */,
+				2AE41D7224AB71FC007B4381 /* ContentView.swift */,
 				2AE41D6E24AB71FC007B4381 /* AppDelegate.swift */,
 				2AE41D7024AB71FC007B4381 /* SceneDelegate.swift */,
-				2AE41D7224AB71FC007B4381 /* ContentView.swift */,
 				2AE41D7424AB71FE007B4381 /* Assets.xcassets */,
 				2AE41D7924AB71FE007B4381 /* LaunchScreen.storyboard */,
 				2AE41D7C24AB71FE007B4381 /* Info.plist */,
@@ -85,6 +87,7 @@
 			children = (
 				2AE41D8524AB95DA007B4381 /* HomeView.swift */,
 				2AE41D8324AB94AE007B4381 /* TabBarView.swift */,
+				2AE41D8724ABA74C007B4381 /* TabBarItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				2AE41D8424AB94AE007B4381 /* TabBarView.swift in Sources */,
 				2AE41D8624AB95DA007B4381 /* HomeView.swift in Sources */,
 				2AE41D7324AB71FC007B4381 /* ContentView.swift in Sources */,
+				2AE41D8824ABA74C007B4381 /* TabBarItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

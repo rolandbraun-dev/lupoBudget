@@ -11,9 +11,8 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        GeometryReader { geometry in
-            
-            VStack {
+        
+        VStack {
                 HomeView()
                 
                 Spacer()
@@ -21,7 +20,7 @@ struct ContentView: View {
                 TabBarView()
             }
             .edgesIgnoringSafeArea(.bottom)
-        }
+        
     }
 }
 
@@ -33,4 +32,6 @@ struct ContentView_Previews: PreviewProvider {
 
 enum SFSymbols {
     static let home     = Image(systemName: "house")
+    static let gear     = Image(systemName: "gear")
+    static let dollarfill   = Image(systemName: "dollarsign.circle.fill")
 }
