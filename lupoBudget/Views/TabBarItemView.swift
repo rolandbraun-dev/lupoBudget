@@ -20,7 +20,7 @@ struct TabBarItemView: View {
         
        VStack(spacing: 0){
                 symbol
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
+                    .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                      .font(.system(size: 16, weight: .light))
                     //.foregroundColor(self.currentView != forView ? Color(red: 92/255, green: 92/255, blue: 104/255) : Color.white)
                     .foregroundColor(self.currentView != forView ? Color(red: 92/255, green: 92/255, blue: 104/255) : Color.blue)
