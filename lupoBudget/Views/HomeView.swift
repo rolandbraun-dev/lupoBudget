@@ -14,11 +14,28 @@ struct HomeView: View {
     
     var body: some View {
         
-        NavigationView {
-                List(0 ..< collectLatestBookings().count) { _ in
-                    HomeCellView()
+        ZStack {
+            
+            NavigationView {
+                    List(0 ..< collectLatestBookings().count) { _ in
+                        HomeCellView()
+                    }
+                    .navigationBarTitle("Home")
+            }
+            
+            // Position +Button in the bottem right corner
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                      //
+                    }) { SFSymbols.plus_circle_fill }
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 25, trailing: 25))
+                        .font(.system(size: 60, weight: .ultraLight))
                 }
-                .navigationBarTitle("Home")
+            }
+            
         }
         
     }

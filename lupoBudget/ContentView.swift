@@ -47,6 +47,7 @@ enum SFSymbols {
     static let info             = Image(systemName: "info")
     static let info_circle      = Image(systemName: "info.circle")
     static let chevron_right    = Image(systemName: "chevron.right")
+    static let plus_circle_fill = Image(systemName: "plus.circle.fill")
 }
 
 func collectLatestBookings() -> [String]{
