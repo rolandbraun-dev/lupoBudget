@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    let bookings = collectLatestBookings()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+                List(0 ..< collectLatestBookings().count) { _ in
+                    HomeCellView()
+                }
+                .navigationBarTitle("Home")
+        }
+        
     }
 }
 
