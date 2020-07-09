@@ -13,7 +13,19 @@ struct HomeCellView: View {
     var body: some View {
         
         HStack() {
-                SFSymbols.dollar
+                
+            VStack {
+                // Category icon
+                SFSymbols.car_fill
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                
+                // Date
+                Text("22").font(.system(size: 20, weight: .bold))
+                    .padding(EdgeInsets(top: 3, leading: 0, bottom: 0, trailing: 0))
+                
+                Text("January").font(.system(size: 7, weight: .light))
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            }
                 
                 Spacer()
                 
@@ -21,8 +33,10 @@ struct HomeCellView: View {
                 
                 Spacer()
                 
-                SFSymbols.chevron_right
-                    .foregroundColor(Color.blue)
+            HStack() {
+                SFSymbols.dollar
+                Text("358.00").padding()
+            }
         }
             .frame(maxWidth: .infinity)
     

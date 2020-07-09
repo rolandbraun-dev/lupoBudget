@@ -10,13 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var currentView: String = "home"
+    @State var currentView: String = "homeView"
     
     var body: some View {
         
         VStack(spacing: 0) {
-            if self.currentView == "home" {
-                HomeView()
+            if self.currentView == "homeView" {
+                HomeView(currentView: $currentView)
             } else if self.currentView == "dollar" {
                 Text("DOLLAR")
             } else if self.currentView == "settings" {
@@ -43,11 +43,14 @@ enum SFSymbols {
     static let gear             = Image(systemName: "gear")
     static let dollar_fill      = Image(systemName: "dollarsign.circle.fill")
     static let dollar           = Image(systemName: "dollarsign.circle")
+    static let euro             = Image(systemName: "eurosign.circle")
     static let slider           = Image(systemName: "slider.horizontal.3")
     static let info             = Image(systemName: "info")
     static let info_circle      = Image(systemName: "info.circle")
     static let chevron_right    = Image(systemName: "chevron.right")
     static let plus_circle_fill = Image(systemName: "plus.circle.fill")
+    static let car_fill         = Image(systemName: "car.fill")
+    static let checkmark_circle = Image(systemName: "checkmark.circle")
 }
 
 func collectLatestBookings() -> [String]{

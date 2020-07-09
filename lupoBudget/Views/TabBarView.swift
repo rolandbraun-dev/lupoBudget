@@ -18,7 +18,7 @@ struct TabBarView: View {
             
             TabBarItemView(symbol: SFSymbols.home, label: "Home", forView: "home", currentView: $currentView)
                 .onTapGesture {
-                    self.currentView = "home"
+                    self.currentView = "homeView"
                 }
             
             TabBarItemView(symbol: SFSymbols.dollar, label: "Dollar", forView: "dollar", currentView: $currentView)
